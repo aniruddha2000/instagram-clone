@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import android_get_app from "images/android_get_app.png";
+import apple_get_app from "images/apple_get_app.png";
 
 class LoginSection extends Component {
   render() {
@@ -13,7 +15,7 @@ class LoginSection extends Component {
             placeholder="Phone number, username, or email"
           />
           <input className="logintextbox" placeholder="Password" />
-          <button className="loginsignupbutton" >Log In</button>
+          <button className="loginsignupbutton">Log In</button>
         </form>
         <div className="borderloginsignup">
           <div className="borderbash"></div>
@@ -21,11 +23,23 @@ class LoginSection extends Component {
           <div className="borderbash"></div>
         </div>
         <div className="loginwithfacebook">
-          {/* <span></span> */}
+          {/* <span></span> *facebook logo* */}
           <span>Log in with Facebook</span>
         </div>
         <div className="passwordreset">
-          <a href="#">Forgot password?</a>
+          <a href="google.com">Forgot password?</a>
+        </div>
+        {/* ^ */}
+        <div className="gotosignup">
+          <p>Don't have an account?</p>
+          <a>Sign up</a>
+        </div>
+        <div className="gettheapp">
+          <p>Get the app.</p>
+          <div>
+            <img src={android_get_app} alt="GetAndroidApp" />
+            <img src={apple_get_app} alt="GetAppleApp" />
+          </div>
         </div>
       </div>
     );

@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.scss";
-import LoginSection from "components/LoginSection";
+import IndexPage from "components/IndexPage";
 
 function App() {
   return (
     <div className="App">
-      <LoginSection />
+      <IndexPage />
     </div>
   );
 }

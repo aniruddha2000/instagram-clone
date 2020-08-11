@@ -6,6 +6,9 @@ class LoginSection extends Component {
   render() {
     return (
       <div className="container">
+        <div>
+
+        </div>
         <div className="title">
           <h1>Instagram</h1>
         </div>
@@ -24,7 +27,7 @@ class LoginSection extends Component {
         </div>
         <div className="loginwithfacebook">
           {/* <span></span> *facebook logo* */}
-          <span>Log in with Facebook</span>
+          <a href="#">Log in with Facebook</a>
         </div>
         <div className="passwordreset">
           <a href="google.com">Forgot password?</a>
@@ -32,7 +35,7 @@ class LoginSection extends Component {
         {/* ^ */}
         <div className="gotosignup">
           <p>Don't have an account?</p>
-          <a>Sign up</a>
+          <a href="#">Sign up</a>
         </div>
         <div className="gettheapp">
           <p>Get the app.</p>

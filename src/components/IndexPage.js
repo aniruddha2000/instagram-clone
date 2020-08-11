@@ -9,22 +9,30 @@ class IndexPage extends Component {
     super(props);
 
     this.state = {
-      screen: "login",
+      logInPage: true,
+      goToSignUpText: "Don't have an account?",
+      goToSignUpButtonText: "Sign up",
     };
   }
 
-  handleButtonClick(page) {
-    this.setState({ screen: page });
+  handleButtonClick() {
+    this.setState((prevState) => ({
+      logInPage: !prevState.logInPage,
+      // goToSignUpText: "Don't have an account?",
+      // goToSignUpButtonText: "Sign up",
+    }));
   }
 
   render() {
+    // const { goToSignUpText } = this.state.goToSignUpText;
+    // const { goToSignUpButtonText } = this.state.goToSignUpButtonText;
     return (
       <div className="container">
-        {this.state.screen === "login" ? <Login /> : <Signup />}
+        {this.state.logInPage === true ? <Login /> : <Signup />}
         <div className="gotosignup">
-          <p>Don't have an account?</p>
-          <button onClick={(e) => this.handleButtonClick(e.target.value)}>
-            Sign up
+          <p>{goToSignUpText}</p>
+          <button onClick={() => this.handleButtonClick()}>
+            {goToSignUpButtonText}
           </button>
         </div>
         <div className="gettheapp">

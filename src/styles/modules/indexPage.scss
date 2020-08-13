@@ -1,16 +1,23 @@
+@import "./instaLogo.scss";
+@import "./loginSignupButton.scss";
+
 .container {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 .loginsignupsection {
   display: inline-block;
   align-items: center;
-  background-color: #FFFFFF;
-  border: 1px solid #c4c1c1;
+  background-color: #ffffff;
+  border: 1px solid #dfdbdb;
   border-radius: 1px;
-  margin-top: 20px;
-  padding: 10px 10px;
+  margin-top: 80px;
+  padding: 20px 20px 20px 20px;
 }
-.instalogo img {
-  width: 175px;
-  height: 65px;
+
+.loginsignupor {
+  margin-top: 10px;
+}
+.or {
+  font: inherit;
+  color: #424242;
 }

@@ -18,21 +18,18 @@ class IndexPage extends Component {
   handleButtonClick() {
     this.setState((prevState) => ({
       logInPage: !prevState.logInPage,
-      // goToSignUpText: "Don't have an account?",
-      // goToSignUpButtonText: "Sign up",
     }));
   }
 
   render() {
-    // const { goToSignUpText } = this.state.goToSignUpText;
-    // const { goToSignUpButtonText } = this.state.goToSignUpButtonText;
+    const { logInPage, goToSignUpText, goToSignUpButtonText } = this.state;
     return (
       <div className="container">
-        {this.state.logInPage === true ? <Login /> : <Signup />}
+        {logInPage === true ? <Login /> : <Signup />}
         <div className="gotosignup">
-          <p>{goToSignUpText}</p>
+          <p>{logInPage === true ? goToSignUpText : "Have an account?"}</p>
           <button onClick={() => this.handleButtonClick()}>
-            {goToSignUpButtonText}
+            {logInPage === true ? goToSignUpButtonText : "Log in"}
           </button>
         </div>
         <div className="gettheapp">

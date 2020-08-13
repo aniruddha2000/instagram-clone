@@ -25,6 +25,7 @@ class Signup extends Component {
         </div>
         <div className="loginwithfacebook">
           {/* <span></span> *facebook logo* */}
+          {/* eslint-disable-next-line */ }
           <a href="#">Log in with Facebook</a>
         </div>
         <div className="passwordreset">

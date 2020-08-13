@@ -4,19 +4,19 @@ import instagram_new_logo from "images/instagram_new_logo.png";
 class Signup extends Component {
   render() {
     return (
-      <div className="loginsection">
+      <div className="signupsection">
         <div className="instalogo">
           <img src={instagram_new_logo} alt="Logo" />
         </div>
         <form>
           <input
-            className="logintextbox"
+            className="signuptextbox"
             placeholder="Phone number, username, or email"
           />
-          <input className="logintextbox" placeholder="Password" />
-          <input className="logintextbox" placeholder="Password" />
-          <input className="logintextbox" placeholder="Password" />
-          <button className="loginsignupbutton">Log In</button>
+          <input className="signuptextbox" placeholder="Password" />
+          <input className="signuptextbox" placeholder="Password" />
+          <input className="signuptextbox" placeholder="Password" />
+          <button className="loginsignupbutton">Sign Up</button>
         </form>
         <div className="borderloginsignup">
           <div className="borderbash"></div>

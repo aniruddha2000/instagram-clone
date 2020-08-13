@@ -3,6 +3,7 @@ import android_get_app from "images/android_get_app.png";
 import apple_get_app from "images/apple_get_app.png";
 import Login from "./Login";
 import Signup from "./Signup";
+import "styles/modules/indexPage.scss";
 
 class IndexPage extends Component {
   constructor(props) {
@@ -25,7 +26,9 @@ class IndexPage extends Component {
     const { logInPage, goToSignUpText, goToSignUpButtonText } = this.state;
     return (
       <div className="container">
-        {logInPage === true ? <Login /> : <Signup />}
+        <div className="loginsignupsection">
+          {logInPage === true ? <Login /> : <Signup />}
+        </div>
         <div className="gotosignup">
           <p>{logInPage === true ? goToSignUpText : "Have an account?"}</p>
           <button onClick={() => this.handleButtonClick()}>

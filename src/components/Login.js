@@ -15,11 +15,13 @@ class Login extends Component {
             className="logintextbox"
             placeholder="Phone number, username, or email"
           />
+          <br />
           <input
             type="password"
             className="logintextbox "
             placeholder="Password"
           />
+          <br />
           <button className="loginsignupbutton">Log In</button>
         </form>
         <div className="borderloginsignup">

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import instagram_new_logo from "images/instagram_new_logo.png";
+import "styles/modules/login.scss";
 
 class Login extends Component {
   render() {
@@ -10,10 +11,15 @@ class Login extends Component {
         </div>
         <form>
           <input
+            type="text"
             className="logintextbox"
             placeholder="Phone number, username, or email"
           />
-          <input className="logintextbox" placeholder="Password" />
+          <input
+            type="password"
+            className="logintextbox "
+            placeholder="Password"
+          />
           <button className="loginsignupbutton">Log In</button>
         </form>
         <div className="borderloginsignup">
@@ -23,7 +29,7 @@ class Login extends Component {
         </div>
         <div className="loginwithfacebook">
           {/* <span></span> *facebook logo* */}
-          {/* eslint-disable-next-line */ }
+          {/* eslint-disable-next-line */}
           <a href="#">Log in with Facebook</a>
         </div>
         <div className="passwordreset">

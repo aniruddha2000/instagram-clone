@@ -26,12 +26,14 @@ class Signup extends Component {
             className="signuptextbox"
             placeholder="Password"
           />
-          <button className="loginsignupbutton">Sign Up</button>
+          <input
+            type="button"
+            className="loginsignupbutton"
+            value="Sign Up"
+          />
         </form>
-        <div className="borderloginsignup">
-          <div className="borderbash"></div>
-          <div className="norderor">OR</div>
-          <div className="borderbash"></div>
+        <div className="loginsignupor">
+          <div className="or">OR</div>
         </div>
         <div className="loginwithfacebook">
           {/* <span></span> *facebook logo* */}

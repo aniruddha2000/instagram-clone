@@ -35,7 +35,7 @@ class Signup extends Component {
         <div className="loginsignupor">
           <div className="or">OR</div>
         </div>
-        <div className="loginwithfacebook">
+        <div className="signupwithfacebook">
           {/* <span></span> *facebook logo* */}
           {/* eslint-disable-next-line */}
           <a href="#">Log in with Facebook</a>

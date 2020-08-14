@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import instagram_new_logo from "images/instagram_new_logo.png";
 import "styles/modules/login.scss";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 
 class Login extends Component {
   render() {
@@ -31,14 +30,17 @@ class Login extends Component {
           <div className="or">OR</div>
         </div>
         <button className="loginwithfacebook">
-          <span>
-            <FontAwesomeIcon icon={faFacebook} />
+          <span className="loginwithfacebookicon">
+            <FontAwesomeIcon color="#3C5998" icon={faFacebookSquare} />
           </span>
           {/* eslint-disable-next-line */}
-          <span href="#">Log in with Facebook</span>
+          <span className="loginwithfacebooktext" href="#">
+            Log in with Facebook
+          </span>
         </button>
         <div className="passwordreset">
-          <a href="google.com">Forgot password?</a>
+          {/* eslint-disable-next-line */}
+          <a href="#">Forgot password?</a>
         </div>
       </div>
     );

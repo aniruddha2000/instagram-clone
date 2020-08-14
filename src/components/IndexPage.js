@@ -4,6 +4,7 @@ import apple_get_app from "images/apple_get_app.png";
 import Login from "./Login";
 import Signup from "./Signup";
 import "styles/modules/indexPage.scss";
+import "styles/modules/gotoSignupLogin.scss"
 
 class IndexPage extends Component {
   constructor(props) {
@@ -11,8 +12,8 @@ class IndexPage extends Component {
 
     this.state = {
       logInPage: true,
-      goToSignUpText: "Don't have an account?",
-      goToSignUpButtonText: "Sign up",
+      goToSignUpLogInText: "Don't have an account?",
+      goToSignUpLogInButtonText: "Sign up",
     };
   }
 
@@ -23,16 +24,16 @@ class IndexPage extends Component {
   }
 
   render() {
-    const { logInPage, goToSignUpText, goToSignUpButtonText } = this.state;
+    const { logInPage, goToSignUpLogInText, goToSignUpLogInButtonText } = this.state;
     return (
       <div className="container">
         <div className="loginsignupsection">
           {logInPage === true ? <Login /> : <Signup />}
         </div>
-        <div className="gotosignup">
-          <p>{logInPage === true ? goToSignUpText : "Have an account?"}</p>
+        <div className="gotosignuplogin">
+          <p>{logInPage === true ? goToSignUpLogInText : "Have an account?"}</p>
           <button onClick={() => this.handleButtonClick()}>
-            {logInPage === true ? goToSignUpButtonText : "Log in"}
+            {logInPage === true ? goToSignUpLogInButtonText : "Log in"}
           </button>
         </div>
         <div className="gettheapp">

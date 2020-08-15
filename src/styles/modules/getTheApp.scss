@@ -1,0 +1,23 @@
+.gettheapp {
+  align-items: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 262px;
+  height: 50px;
+  position: relative;
+}
+.gettheapp > p {
+  font-size: 0.8em;
+  font-family: inherit;
+  color: rgb(78, 78, 78)
+}
+.gettheapplink > .getandroidapp {
+  width: 100px;
+  height: 30px;
+  padding-right: 10px;
+}
+.gettheapplink > .getappleapp {
+  width: 100px;
+  height: 30px;
+}

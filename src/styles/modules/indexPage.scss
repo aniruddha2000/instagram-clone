@@ -1,6 +1,10 @@
+@import "./gotoSignupLogin.scss";
+@import "./getTheApp.scss";
+
 .container {
   background-color: #fafafa;
   align-items: center;
+  height: 100vh;
 }
 .loginsignupsection {
   display: inline-block;

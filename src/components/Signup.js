@@ -26,11 +26,7 @@ class Signup extends Component {
             className="signuptextbox"
             placeholder="Password"
           />
-          <input
-            type="button"
-            className="loginsignupbutton"
-            value="Sign Up"
-          />
+          <input type="button" className="loginsignupbutton" value="Sign Up" />
         </form>
         <div className="loginsignupor">
           <div className="or">OR</div>

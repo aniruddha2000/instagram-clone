@@ -14,13 +14,17 @@ class Signup extends Component {
         <h2 className="welcometext">
           Sign up to see photos and videos from your friends.
         </h2>
-        <div className="signupwithfacebook">
-          <span className="signupwithfacebookicon">
-            <FontAwesomeIcon color="#3C5998" icon={faFacebookSquare} />
-          </span>
-          {/* eslint-disable-next-line */}
-          <a href="#">Log in with Facebook</a>
-        </div>
+        <button className="signupwithfacebook">
+          <FontAwesomeIcon
+            className="signupwithfacebookicon"
+            color="white"
+            icon={faFacebookSquare}
+          />
+          {/* <span className="signupwithfacebookicon">
+            <FontAwesomeIcon color="white" icon={faFacebookSquare} />
+          </span> */}
+          <p>Log in with Facebook</p>
+        </button>
         <div className="loginsignupor">
           <div className="or">OR</div>
         </div>
@@ -47,12 +51,23 @@ class Signup extends Component {
           <br />
           <input type="button" className="loginsignupbutton" value="Sign Up" />
         </form>
-        <div className="termsandpolicy">
-          <p>
-            By signing up, you agree to our Terms , Data Policy and Cookies
-            Policy .
-          </p>
-        </div>
+        <p className="termsandpolicy">
+          By signing up, you agree to our
+          {/* eslint-disable-next-line */}
+          <a className="termsandpolicylinks" href="#">
+            Terms
+          </a>
+          ,{/* eslint-disable-next-line */}
+          <a className="termsandpolicylinks" href="#">
+            Data Policy
+          </a>
+          and
+          {/* eslint-disable-next-line */}
+          <a className="termsandpolicylinks" href="#">
+            Cookies Policy
+          </a>
+          .
+        </p>
       </div>
     );
   }

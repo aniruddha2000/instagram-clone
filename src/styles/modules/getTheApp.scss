@@ -6,18 +6,22 @@
   width: 262px;
   height: 50px;
   position: relative;
+  p {
+    font-size: 0.8em;
+    font-family: inherit;
+    color: rgb(78, 78, 78);
+  }
 }
-.gettheapp > p {
-  font-size: 0.8em;
-  font-family: inherit;
-  color: rgb(78, 78, 78)
-}
-.gettheapplink > .getandroidapp {
-  width: 100px;
-  height: 30px;
-  padding-right: 10px;
-}
-.gettheapplink > .getappleapp {
-  width: 100px;
-  height: 30px;
+.gettheapplink {
+  .getandroidapp {
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    padding-right: 10px;
+  }
+  .getappleapp {
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+  }
 }

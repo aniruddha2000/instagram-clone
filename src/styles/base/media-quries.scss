@@ -1,0 +1,8 @@
+$mq-1: 30em !default; /* 768px / 16px = 48em */
+
+/* Small Devices, Tablets */
+@mixin small-and-above {
+  @media only screen and (max-device-width: $mq-1) {
+    @content;
+  }
+}

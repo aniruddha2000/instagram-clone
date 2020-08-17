@@ -1,13 +1,14 @@
 @import "../base/media-quries.scss";
 
 .footer {
-  margin-top: 120px;
+  background-color: #fafafa;
+  padding-top: 10px;
   .footersubsection {
     .footernavlinks {
       .footerlinksection {
         list-style: none;
         .footerlink {
-          display: inline;
+          display: inline-block;
           padding: 8px;
           a {
             text-decoration: none;

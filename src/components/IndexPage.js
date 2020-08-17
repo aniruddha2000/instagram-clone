@@ -4,7 +4,6 @@ import apple_get_app from "images/apple_get_app.png";
 import Login from "./Login";
 import Signup from "./Signup";
 import "styles/modules/indexPage.scss";
-import Footer from "./Footer";
 
 class IndexPage extends Component {
   constructor(props) {
@@ -55,7 +54,6 @@ class IndexPage extends Component {
             />
           </div>
         </div>
-        <Footer />
       </div>
     );
   }

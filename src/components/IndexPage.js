@@ -54,6 +54,26 @@ class IndexPage extends Component {
             />
           </div>
         </div>
+        <footer className="footer">
+          <div className="footersubsection" >
+            <nav className="footernavlinks">
+              <ul className="footerlinksection">
+                <li className="footerlink">ABOUT</li>
+                <li className="footerlink">HELP</li>
+                <li className="footerlink">PRESS</li>
+                <li className="footerlink">API</li>
+                <li className="footerlink">JOBS</li>
+                <li className="footerlink">PRIVACY</li>
+                <li className="footerlink">TERMS</li>
+                <li className="footerlink">LOCATION</li>
+                <li className="footerlink">TOP ACCOUNTS</li>
+                <li className="footerlink">HASHTAGS</li>
+                <li className="footerlink">LANGUAGES</li>
+              </ul>
+            </nav>
+            <span className="copurightsection">© 2020 INSTAGRAM FROM FACEBOOK</span>
+          </div>
+        </footer>
       </div>
     );
   }

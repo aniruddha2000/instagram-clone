@@ -55,23 +55,49 @@ class IndexPage extends Component {
           </div>
         </div>
         <footer className="footer">
-          <div className="footersubsection" >
+          <div className="footersubsection">
             <nav className="footernavlinks">
               <ul className="footerlinksection">
-                <li className="footerlink">ABOUT</li>
-                <li className="footerlink">HELP</li>
-                <li className="footerlink">PRESS</li>
-                <li className="footerlink">API</li>
-                <li className="footerlink">JOBS</li>
-                <li className="footerlink">PRIVACY</li>
-                <li className="footerlink">TERMS</li>
-                <li className="footerlink">LOCATION</li>
-                <li className="footerlink">TOP ACCOUNTS</li>
-                <li className="footerlink">HASHTAGS</li>
-                <li className="footerlink">LANGUAGES</li>
+                {/* eslint-disable */}
+                <li className="footerlink">
+                  <a href="#">ABOUT</a>
+                </li>
+                <li className="footerlink">
+                  <a href="#">HELP</a>
+                </li>
+                <li className="footerlink">
+                  <a href="#">PRESS</a>
+                </li>
+                <li className="footerlink">
+                  <a href="#">API</a>
+                </li>
+                <li className="footerlink">
+                  <a href="#">JOBS</a>
+                </li>
+                <li className="footerlink">
+                  <a href="#">PRIVACY</a>
+                </li>
+                <li className="footerlink">
+                  <a href="#">TERMS</a>
+                </li>
+                <li className="footerlink">
+                  <a href="#">LOCATION</a>
+                </li>
+                <li className="footerlink">
+                  <a href="#">TOP ACCOUNTS</a>
+                </li>
+                <li className="footerlink">
+                  <a href="#">HASHTAGS</a>
+                </li>
+                <li className="footerlink">
+                  <a href="#">LANGUAGES</a>
+                </li>
+                {/* eslint-enable */}
               </ul>
             </nav>
-            <span className="copurightsection">© 2020 INSTAGRAM FROM FACEBOOK</span>
+            <span className="copurightsection">
+              © 2020 INSTAGRAM FROM FACEBOOK
+            </span>
           </div>
         </footer>
       </div>

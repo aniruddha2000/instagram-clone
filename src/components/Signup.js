@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import instagram_new_logo from "images/instagram_new_logo.png";
-import "styles/modules/signup.scss";
+import "styles/signup.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 

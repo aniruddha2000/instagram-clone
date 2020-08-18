@@ -7,13 +7,24 @@
   height: 90vh;
 }
 .loginsignupsection {
-  display: inline-block;
-  align-items: center;
-  background-color: #ffffff;
-  border: 1px solid #dfdbdb;
-  border-radius: 1px;
-  margin-top: 80px;
-  padding: 20px 20px 20px 20px;
+  .loginsection {
+    display: inline-block;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #dfdbdb;
+    border-radius: 1px;
+    margin-top: 80px;
+    padding: 20px 20px 20px 20px;
+  }
+  .signupsection {
+    margin-top: 10px;
+    display: inline-block;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #dfdbdb;
+    border-radius: 1px;
+    padding: 20px 20px 20px 20px;
+  }
 }
 
 .loginsignupor {

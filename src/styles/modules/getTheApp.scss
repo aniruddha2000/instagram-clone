@@ -3,13 +3,17 @@
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  width: 262px;
+  width: 16.375rem;
   height: 50px;
   position: relative;
   p {
     font-size: 1.1rem;
     font-family: inherit;
     color: rgb(78, 78, 78);
+  }
+  @include small-and-above {
+    padding: 0;
+    width: 60%;
   }
 }
 .gettheapplink {

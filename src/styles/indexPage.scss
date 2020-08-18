@@ -1,30 +1,41 @@
+@import "./base/media-quries.scss";
 @import "./modules/gotoSignupLogin.scss";
 @import "./modules/getTheApp.scss";
-@import "./base/media-quries.scss";
 
 .container {
   background-color: #fafafa;
-  align-items: center;
-  height: 90vh;
+  height: 100vh;
 }
 .loginsignupsection {
   .loginsection {
     display: inline-block;
-    align-items: center;
     background-color: #ffffff;
     border: 1px solid #dfdbdb;
     border-radius: 1px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 80px;
+    max-width: 18.25rem;
     padding: 20px 40px 40px 40px;
   }
   .signupsection {
-    margin-top: 30px;
     display: inline-block;
-    align-items: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 18.25rem;
     background-color: #ffffff;
     border: 1px solid #dfdbdb;
     border-radius: 1px;
-    padding: 20px 41px 40px 41px;
+    padding: 20px 40px 40px 40px;
+  }
+  .loginsection, .signupsection {
+    @include small-and-above {
+      border: none;
+      background-color: #fafafa;
+      padding: 0;
+      width: 70%;
+    }
   }
 }
 

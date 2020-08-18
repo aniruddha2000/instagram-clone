@@ -1,6 +1,8 @@
 .welcometext {
-  font-size: 0.8em;
-  padding-left: 20px;
+  display: flex;
+  // justify-content: center;
+  font-size: 0.9em;
+  padding-left: 50px;
   margin-top: -5px;
   width: 180px;
   color: rgba(var(--f52,142,142,142),1);

@@ -31,7 +31,7 @@ class Login extends Component {
         </div>
         <button className="loginwithfacebook">
           <span className="loginwithfacebookicon">
-            <FontAwesomeIcon color="#3C5998" icon={faFacebookSquare} />
+            <FontAwesomeIcon size="lg" color="#3C5998" icon={faFacebookSquare} />
           </span>
           {/* eslint-disable-next-line */}
           <span className="loginwithfacebooktext" href="#">

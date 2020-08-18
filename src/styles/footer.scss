@@ -3,26 +3,29 @@
 .footer {
   background-color: #fafafa;
   padding-top: 10px;
+  display: flex;
+  justify-content: center;
   .footersubsection {
-    .footernavlinks {
-      .footerlinksection {
-        margin-top: -20px;
+    width: 100%;
+    nav {
+      ul {
+        // margin-top: -20px;
         list-style: none;
-        .footerlink {
+        li {
           display: inline-block;
           padding: 8px;
           a {
             text-decoration: none;
             color: #014c86;
             font-weight: bolder;
-            font-size: 0.6em;
+            font-size: 0.6rem;
           }
         }
       }
     }
     .copurightsection {
       color: #919090;
-      font-size: 0.7em;
+      font-size: 0.6rem;
       font-weight: bolder;
       vertical-align: 20px;
     }

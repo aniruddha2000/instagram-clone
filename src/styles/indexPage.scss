@@ -1,5 +1,6 @@
 @import "./modules/gotoSignupLogin.scss";
 @import "./modules/getTheApp.scss";
+@import "./base/media-quries.scss";
 
 .container {
   background-color: #fafafa;
@@ -14,16 +15,16 @@
     border: 1px solid #dfdbdb;
     border-radius: 1px;
     margin-top: 80px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 40px 40px 40px;
   }
   .signupsection {
-    margin-top: 10px;
+    margin-top: 30px;
     display: inline-block;
     align-items: center;
     background-color: #ffffff;
     border: 1px solid #dfdbdb;
     border-radius: 1px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 60px 20px 60px;
   }
 }
 

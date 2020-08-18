@@ -7,40 +7,40 @@ class Footer extends Component {
       <div>
         <footer className="footer">
           <div className="footersubsection">
-            <nav className="footernavlinks">
-              <ul className="footerlinksection">
+            <nav>
+              <ul>
                 {/* eslint-disable */}
-                <li className="footerlink">
+                <li>
                   <a href="#">ABOUT</a>
                 </li>
-                <li className="footerlink">
+                <li>
                   <a href="#">HELP</a>
                 </li>
-                <li className="footerlink">
+                <li>
                   <a href="#">PRESS</a>
                 </li>
-                <li className="footerlink">
+                <li>
                   <a href="#">API</a>
                 </li>
-                <li className="footerlink">
+                <li>
                   <a href="#">JOBS</a>
                 </li>
-                <li className="footerlink">
+                <li>
                   <a href="#">PRIVACY</a>
                 </li>
-                <li className="footerlink">
+                <li>
                   <a href="#">TERMS</a>
                 </li>
-                <li className="footerlink">
+                <li>
                   <a href="#">LOCATION</a>
                 </li>
-                <li className="footerlink">
+                <li>
                   <a href="#">TOP ACCOUNTS</a>
                 </li>
-                <li className="footerlink">
+                <li>
                   <a href="#">HASHTAGS</a>
                 </li>
-                <li className="footerlink">
+                <li>
                   <a href="#">LANGUAGES</a>
                 </li>
                 {/* eslint-enable */}

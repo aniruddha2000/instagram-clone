@@ -20,9 +20,6 @@ class Signup extends Component {
             color="white"
             icon={faFacebookSquare}
           />
-          {/* <span className="signupwithfacebookicon">
-            <FontAwesomeIcon color="white" icon={faFacebookSquare} />
-          </span> */}
           <p>Log in with Facebook</p>
         </button>
         <div className="loginsignupor">

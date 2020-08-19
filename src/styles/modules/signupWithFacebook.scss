@@ -1,9 +1,11 @@
 .signupwithfacebook {
   background-color: #3f95f6;
   height: 35px;
-  width: 285px;
+  width: 296px;
   border: none;
   border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
   .signupwithfacebookicon,
   p {
@@ -13,5 +15,9 @@
     margin-top: 10px;
     font-weight: bolder;
     font-size: 1.2em;
+  }
+  @include small-and-above {
+    padding: 0;
+    width: 88%;
   }
 }

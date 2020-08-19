@@ -1,9 +1,12 @@
 .welcometext {
-  display: flex;
-  // justify-content: center;
   font-size: 0.9em;
-  padding-left: 50px;
   margin-top: -5px;
-  width: 180px;
-  color: rgba(var(--f52,142,142,142),1);
+  width: 11.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+  @include small-and-above {
+    padding: 0;
+    width: 70%;
+  }
 }

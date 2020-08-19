@@ -13,7 +13,7 @@
   }
   @include small-and-above {
     padding: 0;
-    width: 60%;
+    width: 80%;
   }
 }
 .gettheapplink {
@@ -28,4 +28,9 @@
     width: 125px;
     height: 40px;
   }
+  // .getandroidapp, .getappleapp {
+  //   @include small-and-above {
+  //     width: 60%;
+  //   }
+  // }
 }

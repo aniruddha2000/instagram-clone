@@ -1,15 +1,21 @@
 @import "./base/media-quries.scss";
 
 .footer {
-  background-color: #b97d7d;
+  background-color: #fafafa;
   padding: 1.4rem 0;
   .footersubsection {
     nav {
       ul {
         margin-top: 0;
-        list-style: none;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        @include medium-width {
+          width: 50%;
+        }
         li {
           display: inline-block;
+          list-style: none;
           padding: 8px;
           a {
             text-decoration: none;

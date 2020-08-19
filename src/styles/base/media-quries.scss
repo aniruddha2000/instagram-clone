@@ -1,5 +1,6 @@
 $mq-1: 30.625rem !default; /* 490px / 16px = 1rem */
 $mq-2: 44.6875rem !default; /* 715px / 16px = 1rem */
+$mq-3: 56.25rem !default; /* 900px / 16px = 1rem */
 
 /* Small Devices, Tablets */
 @mixin small-and-above {
@@ -7,8 +8,15 @@ $mq-2: 44.6875rem !default; /* 715px / 16px = 1rem */
     @content;
   }
 }
+/* Device width */
 @mixin small-width {
   @media only screen and (max-device-height: $mq-2) {
+    @content;
+  }
+}
+/* Footer width */
+@mixin medium-width {
+  @media only screen and (max-device-width: $mq-3) {
     @content;
   }
 }

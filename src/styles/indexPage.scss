@@ -3,8 +3,11 @@
 @import "./modules/getTheApp.scss";
 
 .container {
-  background-color: #fafafa;
-  height: 100vh;
+  background-color: #9e3c3c;
+  height: 90vh;
+  @include small-width {
+    height: 120vh;
+  }
 }
 .loginsignupsection {
   .loginsection {

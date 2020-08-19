@@ -1,8 +1,14 @@
 $mq-1: 30.625rem !default; /* 490px / 16px = 1rem */
+$mq-2: 44.6875rem !default; /* 715px / 16px = 1rem */
 
 /* Small Devices, Tablets */
 @mixin small-and-above {
   @media only screen and (max-device-width: $mq-1) {
+    @content;
+  }
+}
+@mixin small-width {
+  @media only screen and (max-device-height: $mq-2) {
     @content;
   }
 }

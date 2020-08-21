@@ -12,3 +12,18 @@
     width: 88%;
   }
 }
+.loginsignupbuttonactive {
+  background-color: #3F95F6;
+  cursor: pointer;
+  color: #fffefe;
+  text-align: center;
+  font-weight: bold;
+  height: 35px;
+  width: 300px;
+  border: none;
+  border-radius: 3px;
+  margin-top: 15px;
+  @include small-and-above {
+    width: 88%;
+  }
+}

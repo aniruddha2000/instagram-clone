@@ -13,16 +13,20 @@ class Login extends Component {
       password: "",
       buttonClassName: "loginsignupbutton",
     };
+    this.handleInput = this.handleInput.bind(this);
   }
 
-  handleInput(e) {
+  handleInput(e, field) {
     this.setState({
-      username: e.target.value,
-      password: e.target.value,
+      [field]: e.target.value,
     });
     if (this.state.username.length > 1 && this.state.password.length > 6) {
       this.setState({
-        buttonClassName: "loginsignupbuttonactive"
+        buttonClassName: "loginsignupbuttonactive",
+      });
+    } else {
+      this.setState({
+        buttonClassName: "loginsignupbutton",
       });
     }
   }
@@ -39,21 +43,17 @@ class Login extends Component {
             type="text"
             className="logintextbox"
             placeholder="Phone number, username, or email"
-            onChange={(e) => this.handleInput(e)}
+            onChange={(e) => this.handleInput(e, "username")}
           />
           <br />
           <input
             type="password"
             className="logintextbox "
             placeholder="Password"
-            onChange={(e) => this.handleInput(e)}
+            onChange={(e) => this.handleInput(e, "password")}
           />
           <br />
-          <input
-            type="button"
-            className={buttonClassName}
-            value="Log In"
-          />
+          <input type="button" className={buttonClassName} value="Log In" />
         </form>
         <div className="loginsignupor">
           <div className="or">OR</div>

@@ -5,7 +5,35 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 
 class Signup extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      emailOrPhone: "",
+      fullName: "",
+      username: "",
+      password: "",
+      buttonClassName: "loginsignupbutton",
+    };
+  }
+
+  handleInput(e, field) {
+    this.setState({
+      [field]: e.target.value,
+    });
+    if (this.state.fullName.length > 1 && this.state.username.length > 1 && this.state.password.length > 6) {
+      this.setState({
+        buttonClassName: "loginsignupbuttonactive",
+      });
+    } else {
+      this.setState({
+        buttonClassName: "loginsignupbutton",
+      });
+    }
+  }
+
   render() {
+    const { buttonClassName } = this.state;
     return (
       <div className="signupsection">
         <div className="instalogo">
@@ -30,23 +58,36 @@ class Signup extends Component {
             type="text"
             className="signuptextbox"
             placeholder="Phone number, username, or email"
+            onChange={(e) => this.handleInput(e, "emailOrPhone")}
           />
           <br />
           <input
             type="text"
             className="signuptextbox"
             placeholder="Full Name"
+            onChange={(e) => this.handleInput(e, "fullName")}
           />
           <br />
-          <input type="text" className="signuptextbox" placeholder="Username" />
+          <input
+            type="text"
+            className="signuptextbox"
+            placeholder="Username"
+            onChange={(e) => this.handleInput(e, "username")}
+          />
           <br />
           <input
             type="password"
             className="signuptextbox"
             placeholder="Password"
+            onChange={(e) => this.handleInput(e, "password")}
           />
           <br />
-          <input type="button" className="loginsignupbutton" value="Sign Up" />
+          <input
+            type="button"
+            className={buttonClassName}
+            value="Sign Up"
+            onChange={(e) => this.handleInput(e)}
+          />
         </form>
         <p className="termsandpolicy">
           By signing up, you agree to our
